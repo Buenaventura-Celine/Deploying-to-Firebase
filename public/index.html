@@ -25,7 +25,6 @@
           <li><a href="#"><i class="fa fa-user"></i> About</a></li>
           <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
           <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-          <li><a href="#"><i class="fa fa-envelope"></i> Blog</a></li>
           <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
         </ul>
         <div class="copyright-tetx">&copy; cjvbuenaventura . 2021</div>
@@ -207,7 +206,7 @@
         <!--About Section End-->
 
         <!--Service Section-->
-        <section class="service section">
+        <section class="service section hidden">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -275,6 +274,145 @@
         </section>
         <!--Service Section End-->
 
+        <!--Portfolio Section-->
+        <section class="portfolio section hidden">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-filter padd-15">
+                <button type="button" class="active" data-filter="all">All</button>
+                <button type="button" data-filter="finished">Finished</button>
+                <button type="button" data-filter="on-progress">On-Progress</button>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="portfolio-item padd-15" data-category="finished">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio_1.png" alt="">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Animalzz</h4>
+                    <p>To neutralize the burden the semester holds, we
+                      decided to develop a website that would calm not
+                      only us, the creators, but also anyone who will
+                       going to visit the page.
+                      PS: August Sinang is my partner in this project,
+                      also my partner in life :)</p>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item padd-15" data-category="finished">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio_2.png" alt="">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Drunk Cube</h4>
+                    <p>This is the game I made when I was in my second
+                      year of college. This project has broadened my
+                      horizons; I've discovered that I appreciate making
+                      games just as much as I enjoy developing online
+                      and mobile applications.</p>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item padd-15" data-category="on-progress">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio_3.png" alt="">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Document Request System</h4>
+                    <p>This project aims to help residents
+                      to request documents in their
+                      respective barangays in the
+                      comfort of their home and not
+                      putting their health at risk.
+                      </p>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item padd-15" data-category="on-progress">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio_4.png" alt="">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Learning Management System</h4>
+                    <p>This project attempts to solve the uninteresting
+                      learning environment and poor interaction among
+                      individuals participating in preschool learning,
+                      particularly in these times where all academic
+                      process is conducted remotely. This is a mobile
+                      application that we're working on alongside
+                      Alea Frogosa.
+                      </p>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item padd-15" data-category="on-progress">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/gallery_5.png" alt="">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Point of Sale and Inventory System</h4>
+                    <p>This is also a mobile application that assist small
+                      company businesses and startups in stabilizing
+                      their operations by tracking their business
+                      progress and improve their quality of service.</p>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item padd-15" data-category="on-progress">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/gallery_6.png" alt="">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Wanderlust</h4>
+                    <p>This project is a travel website specifically to feature
+                      beautiful beaches here in the Philippines. This is
+                      designed to promote the wonders in our country.</p>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!--Portfolio Section End-->
+        
       </div>
     <!--Main Content End-->
     
@@ -283,6 +421,35 @@
       
   </div>
   <!-- Main Container -->
+
+  <!--Lightbox-->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <div class="lightbox-close">&times;</div>
+      
+      <div class="lightbox-info">
+        <img src="" alt="" class="lightbox-img" onclick="nextItem()">>
+        <div class="lightbox-caption">
+          <h3 class="caption-text"></h3>
+          <p class="caption-counter"></p>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-laptop"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="lightbox-controls">
+      <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+      <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+  <!--Lightbox End-->
+
+  <!--Template JS-->
+  <script src="js/script.js"></script>
 </body>
 </html>
 
