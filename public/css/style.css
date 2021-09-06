@@ -18,6 +18,7 @@ body {
   outline: none;
   text-decoration: none;
   box-sizing: border-box;
+  width: auto;
 }
 
 ::before,
@@ -318,10 +319,15 @@ select {
 }
 
 /* About Section */
+
+.about {
+  padding: 0 30px;
+}
 .about .about-content {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 0 30px;
 }
 
 .about .about-content .about-text {
@@ -530,9 +536,9 @@ select {
 
 .service .service-item {
   padding: 15px;
-  -ms-flex: 0 0 calc(100% / 3);
-  flex: 0 0 calc(100% / 3);
-  max-width: calc(100% / 3);
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
   margin-bottom: 30px;
 }
 
@@ -980,4 +986,73 @@ select {
 
 .contact .contact-form .form-item textarea.form-control {
   height: 140px;
+}
+
+/* Responsive */
+
+@media (max-width: 1199px) {
+  .aside {
+    left: -270px;
+  }
+  .main-content {
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item p span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .service .service-item,
+  .portfolio .portfolio-item {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about .about-content .skills {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about {
+  }
+}
+
+@media (max-width: 767px) {
+  .service .service-item,
+  .contact .contact-form .col-6,
+  .about .about-content .education,
+  .about .about-content .personal-info,
+  .about .about-content .skills,
+  .about .about-content .experience {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .portfolio .portfolio-filter button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-item,
+  .contact .contact-info-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .skills .skill-item h5 {
+    display: none;
+  }
+  .about .about-content .skills .skill-item {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .about .about-content .personal-info .info-item p span {
+    font-size: 10px;
+  }
 }
