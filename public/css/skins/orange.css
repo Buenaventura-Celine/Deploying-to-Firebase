@@ -8,6 +8,8 @@
   border-bottom: 4px solid #fa5b0f;
 }
 
+body.dark .home .intro p span,
+.home .intro p span,
 body.dark .portfolio .portfolio-filter button.active,
 body.dark .aside .nav li a.active,
 body.dark .aside .nav li a:hover,

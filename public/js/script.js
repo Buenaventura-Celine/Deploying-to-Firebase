@@ -43,7 +43,9 @@ const lightbox = document.querySelector(".lightbox"),
         lightboxImg = lightbox.querySelector(".lightbox-img"),
         lightboxClose = lightbox.querySelector(".lightbox-close"),
         lightboxText = lightbox.querySelector(".caption-text"),
-        lightboxCounter = lightbox.querySelector(".caption-counter")
+        lightboxCounter = lightbox.querySelector(".caption-counter"),
+        lightboxGithub = lightbox.querySelector(".github"),
+        lightboxWebsite = lightbox.querySelector(".website")
     let itemIndex = 0;
 
     for(let i = 0; i < totalPortfolioItem; i++){
@@ -80,7 +82,9 @@ const lightbox = document.querySelector(".lightbox"),
         imgSrc = portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src");
         lightboxImg.src=imgSrc;
         lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML;
-        lightboxCounter.innerHTML=portfolioItems[itemIndex].querySelector("p").innerHTML
+        lightboxCounter.innerHTML=portfolioItems[itemIndex].querySelector("p").innerHTML;
+        lightboxGithub.href = portfolioItems[itemIndex].querySelector(".github").href;
+        lightboxWebsite.href = portfolioItems[itemIndex].querySelector(".website").href;
     }
 
 //close Lightbox
@@ -211,3 +215,11 @@ window.addEventListener("DOMContentLoaded", function () {
     };
     xhr.send(data);
   }
+
+  var typed = new Typed(".typing", {
+    strings:["Software Engineer", "Frontend Developer", "Backend Developer", "Mobile App Developer", "Quality Assurance Engineer", "Web Developer"],
+    typeSpeed: 100,
+    backspeed: 60,
+    loop: true
+
+});
