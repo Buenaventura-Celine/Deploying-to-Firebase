@@ -194,6 +194,10 @@ select {
   transition: all 1s ease;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .preloader.opacity-0 {
   opacity: 0;
 }
