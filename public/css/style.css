@@ -164,6 +164,7 @@ select {
   display: inline-block;
   white-space: nowrap;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
