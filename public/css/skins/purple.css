@@ -25,6 +25,7 @@ body.dark .aside .nav li a:hover,
   color: #ff69b4;
 }
 
+.swal2-confirm,
 .lightbox-caption .social-links a,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,

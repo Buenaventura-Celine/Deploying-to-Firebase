@@ -25,6 +25,7 @@ body.dark .portfolio .portfolio-filter button.active,
   color: #72b626;
 }
 
+.swal2-confirm,
 .lightbox-caption .social-links a,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
