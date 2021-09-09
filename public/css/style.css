@@ -441,6 +441,81 @@ select {
   transform: scale(1.1);
 }
 
+.contact .contact-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.contact .contact-footer a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact .contact-footer a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.portfolio .portfolio-footer a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-footer a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.about .about-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.about .about-footer a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about .about-footer a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /* About Section */
 
 .about {
@@ -1124,6 +1199,12 @@ select {
   color: #504e70;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.contact .contact-form .contact-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .contact .contact-form .form-item .form-control:hover {

@@ -26,6 +26,9 @@ body.dark .aside .nav li a:hover,
   color: #ec1839;
 }
 
+.about .about-footer a,
+.portfolio .portfolio-footer a,
+.contact .contact-footer a,
 .swal2-styled.swal2-confirm,
 .lightbox-caption .social-links a,
 .aside .nav-toggler span,

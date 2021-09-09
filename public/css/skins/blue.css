@@ -26,12 +26,15 @@ body.dark .aside .nav li a:hover,
   color: #2196f3;
 }
 
+.about .about-footer a,
+.portfolio .portfolio-footer a,
 .swal2-confirm,
 .lightbox-caption .social-links a,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
 .home .intro .social-links a,
+.contact .contact-footer a,
 .section-title h2::before,
 .section-title h2::after,
 .btn,
