@@ -45,7 +45,8 @@ const lightbox = document.querySelector(".lightbox"),
         lightboxText = lightbox.querySelector(".caption-text"),
         lightboxCounter = lightbox.querySelector(".caption-counter"),
         lightboxGithub = lightbox.querySelector(".github"),
-        lightboxWebsite = lightbox.querySelector(".website")
+        lightboxWebsite = lightbox.querySelector(".website"),
+        lightboxLanguages = lightbox.querySelector(".languages")
     let itemIndex = 0;
 
     for(let i = 0; i < totalPortfolioItem; i++){
@@ -83,6 +84,7 @@ const lightbox = document.querySelector(".lightbox"),
         lightboxImg.src=imgSrc;
         lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML;
         lightboxCounter.innerHTML=portfolioItems[itemIndex].querySelector("p").innerHTML;
+        lightboxLanguages.innerHTML=portfolioItems[itemIndex].querySelector("ul").innerHTML;
         lightboxGithub.href = portfolioItems[itemIndex].querySelector(".github").href;
         lightboxWebsite.href = portfolioItems[itemIndex].querySelector(".website").href;
     }
