@@ -626,7 +626,7 @@ select {
   left: 0;
   top: 0;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 1px;
 }
 
 .about .about-content .skills .skill-item .skill-percent {
