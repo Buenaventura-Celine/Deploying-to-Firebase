@@ -182,7 +182,6 @@ window.addEventListener("DOMContentLoaded", function () {
     var status = document.getElementById("status");
   
     // Success and Error functions for after the form is submitted
-  
     function success() {
         Swal.fire({
             icon: 'success',
